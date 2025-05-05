@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    
+    
+    <link rel="stylesheet" href="allStyle.css">
+    
+
+
+</head>
+<body>
+    <form name="registration" action="register.html" onsubmit="return validation()" id="form">
+        <table>
+            <tr>
+                <td>Employee ID: 
+
+                </td>
+                <td><input type="text" name="eID"></td>
+                <td><span id="iderr"></span></td>
+            </tr>
+            <tr>
+                <td>Full name:
+                     </td>
+                <td><input type="text" name="fname"></td>
+                <td><span id="nameerr"></span></td>
+            </tr>
+            <tr>
+                <td>Email: 
+
+                </td>
+                <td><input type="text" name="mail"> </td>
+                <td><span id="mailerr"></span></td>
+            </tr>
+            <tr>
+                <td>Department:
+                     </td>
+                <td><select name="dep">
+                    <option value="">Select</option>
+                    <option value="HR">HR</option>
+                    <option value="Sales">Sales</option>
+                    <option value="IT">IT</option>
+                    <option value="Marketing">Marketing</option>
+                </select></td>
+                <td><span id="deperr"></span></td>
+            </tr>
+            <tr>
+                <td>Joining Date:
+                     </td>
+                <td><input type="date" name="date"> </td>
+                <td><span id="dateerr"></span></td>
+            </tr>
+            <tr>
+                <td>Gender: 
+
+                </td>
+                <td><input type="radio" name="gender" value="Male">Male</td>
+                <td><input type="radio" name="gender" value="Female">Female</td>
+                <td><span id="gendererr"></span> </td>
+            </tr>
+
+            <tr>
+                <td>Employment Type: 
+
+                </td>
+                <td><input name="type" type="checkbox" value="Full-time">Full-time </td>
+                <td><span id="typeerr"></span>  </td>
+            </tr>
+            <tr><td><input type="reset" value="reset"></td><td><input type="submit" value="submit"></td></tr>
+        </table>
+
+        <p id="formoutput"></p>
+    </form>
+    <script src="validate.js"></script>
+</body>
+</html>

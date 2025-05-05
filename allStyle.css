@@ -1,0 +1,17 @@
+#navBar{
+    display: block;
+    height: 50px;
+    background-color: antiquewhite;
+    padding-bottom: 10px;
+}
+#link{
+    text-align: left;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+span{
+    font-size: 14px;
+    font-weight: bold;
+    color: red;
+}
